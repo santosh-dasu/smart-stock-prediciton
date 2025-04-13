@@ -1,0 +1,7 @@
+app.log
+secret.key
+__pycache__/
+*.pyc
+models/saved_models/
+1.py
+.venv/
