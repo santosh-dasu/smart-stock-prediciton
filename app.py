@@ -47,11 +47,16 @@ if ticker and ticker != st.session_state["last_ticker"]:
     st.session_state["last_ticker"] = ticker
 
 # Fetch stock data
+
 if ticker:
-    stock_info = yf.Ticker(ticker).info
-    if not stock_info or "regularMarketPrice" not in stock_info:
-        st.sidebar.error("❌ Invalid stock ticker. Please enter a valid one.")
-        ticker = None
+    try:
+        stock_info = yf.Ticker(ticker).info
+        if not stock_info or "regularMarketPrice" not in stock_info:
+            st.sidebar.error("❌ Invalid stock ticker. Please enter a valid ticker.")
+            ticker = None
+    except Exception as e:
+        st.sidebar.error("❌ Failed to fetch data. Please check the ticker or try again later.")
+        print(f"Error: {e}")
     else:
         # Display stock info card
         st.markdown(
