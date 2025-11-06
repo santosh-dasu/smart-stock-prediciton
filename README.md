@@ -151,12 +151,6 @@ We welcome contributions! Whether it’s fixing bugs, improving the UI, or addin
 
 
 
-## 📜 **License**:
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-
-
 ## 📢 **Stay Ahead of the Game**:
 
 With the **Stock Prediction App**, you have a powerful tool at your fingertips to predict stock prices and make informed decisions. Whether you're an investor, data enthusiast, or just curious about stock forecasting, this app is your gateway to better insights. 🚀📈
